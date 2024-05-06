@@ -1,0 +1,80 @@
+/* CartPage.css */
+
+/* Cart page container */
+.cart-page {
+  padding: 20px;
+}
+
+/* Cart list styles */
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual cart item */
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Item details */
+.item-details {
+  flex: 1;
+}
+
+.item-details img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Item actions container */
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Button styles */
+.item-actions button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.item-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Total price display */
+.total-price {
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack cart items vertically on small screens */
+  .cart-item {
+    flex-direction: column;
+  }
+
+  /* Adjust image size to fit smaller screens */
+  .item-details img {
+    max-width: 100%;
+  }
+
+  /* Align item actions horizontally on small screens */
+  .item-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
